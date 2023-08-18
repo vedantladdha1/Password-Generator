@@ -36,7 +36,7 @@ body{
 
 .container h1 span{
     color: #019f55;
-    border-bottom: 4px solid #019f50;
+  
     padding-bottom: 7px;
 }
 
@@ -207,4 +207,3 @@ body{
     
     }
 }
-
