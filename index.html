@@ -15,12 +15,26 @@
 
             <div class="display">
                 <input type="text" id="password" placeholder="Password">
-                <img src="./rpg_img/images/copy.png" onclick="copyPassword()">
-            </div>
 
-            <button onclick=" createPassword()"> <img src="./rpg_img/images/generate.png">Generate Password</button>
+                <img src="./rpg_img/images/copy.png" onclick="copyPassword()">
+
+               
+                
+            </div>
+            
+            <button class="generate" onclick=" createPassword()"> <img src="./rpg_img/images/generate.png">Generate Password</button>
+
+            
+                <div class="strength-meter">
+                    <div class="strength-bar"></div>
+                    <div class="strength-text">Strength: <span class="strength-label">Weak</span></div>
+                </div>
+                
+            
         </div>
 
         <script src="./script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+
     </body>
 </html>
