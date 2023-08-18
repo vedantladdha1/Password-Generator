@@ -29,6 +29,10 @@ body{
     border-radius: 10px;
 }
 
+.generate{
+    width:90%;
+    height:90%;
+}
 .container h1{
     font-weight: 500;
     font-size:45px;
@@ -94,6 +98,11 @@ body{
         border-radius: 10px;
     }
     
+    .generate{
+        width:70%;
+        height:65%;
+        border-radius:5px;
+    }
     .container h1{
         font-weight: 500;
         font-size:35px;
@@ -174,7 +183,7 @@ body{
     }
     
     .display img{
-        width:20px;
+        width:15px;
         cursor:pointer;
     }
     
@@ -206,5 +215,38 @@ body{
     
     
     }
+}
+
+@media(max-width:770px){
+    .display{
+        width:90%;
+        margin-top:50px;
+        margin-bottom: 30px;
+        background: #fff;
+        color:#333;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 18px ;
+        border-radius: 10px;
+    }
+    
+}
+
+
+@media(min-width:550px){
+    .display{
+        width:90%;
+        margin-top:50px;
+        margin-bottom: 30px;
+        background: #fff;
+        color:#333;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 18px ;
+        border-radius: 10px;
+    }
+    
 }
 
