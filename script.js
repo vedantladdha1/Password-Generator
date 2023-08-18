@@ -25,3 +25,21 @@ function copyPassword(){
     passwordbox.select();
     document.execCommand("copy");
 }
+
+
+const strengthBar = document.querySelector(".strength-bar");
+const strengthLabel = document.querySelector(".strength-label");
+
+passwordbox.addEventListener("input", updateStrengthMeter);
+
+function updateStrengthMeter() {
+    const password = passwordbox.value;
+    const passwordStrength = zxcvbn(password);
+
+    const strengthPercentage = (passwordStrength.score / 4) * 100;
+    strengthBar.style.width = `${strengthPercentage}%`;
+
+    const strengthLabels = ["Very Weak", "Weak", "Moderate", "Strong", "Very Strong"];
+    const strengthLevel = passwordStrength.score;
+    strengthLabel.textContent = strengthLabels[strengthLevel];
+}
